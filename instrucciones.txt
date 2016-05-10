@@ -1,0 +1,8 @@
+INSERT INTO `localidad`(`ID`, `Descripcion`) VALUES ([value-1],[value-2]) // ES EL INSERT LO QUE MODIFICO SON 	INSERT INTO `localidad`(`Descripcion`) VALUES ("AVELLANEDA")		//LOS VALUES DEL FINAL																	
+
+
+update
+
+UPDATE `alumno` SET `ID`=[value-1],`Nombre`=[value-2],`IDlocalidad`=[value-3] WHERE 1
+
+UPDATE `alumno` SET `Nombre`="Maria" WHERE ID=3 // modifico el nombre del alumno 3
