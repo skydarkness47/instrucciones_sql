@@ -6,3 +6,15 @@ update
 UPDATE `alumno` SET `ID`=[value-1],`Nombre`=[value-2],`IDlocalidad`=[value-3] WHERE 1
 
 UPDATE `alumno` SET `Nombre`="Maria" WHERE ID=3 // modifico el nombre del alumno 3
+
+
+SELECT `NOMBRE`,`IDLocalidad` FROM alumno // SELECCIONAR ALUMNOS
+
+
+// SELECCIONO LOS ALUMNOS QUE CORRESPONDAN CON SU LOCALIDAD Y LOS MUESTRO. todo el ("AS" ALGO) ES UN ALIAS
+
+
+SELECT A.`NOMBRE`,L.`Descripcion`as Localidad FROM alumno as A, localidad as L WHERE A.IDLocalidad = L.ID
+
+// BORRA EL ALUMNO CON ID 6
+DELETE FROM `alumno` WHERE ID=6
