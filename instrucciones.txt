@@ -18,3 +18,11 @@ SELECT A.`NOMBRE`,L.`Descripcion`as Localidad FROM alumno as A, localidad as L W
 
 // BORRA EL ALUMNO CON ID 6
 DELETE FROM `alumno` WHERE ID=6
+
+
+
+SELECT AL.`Materia`,A.`Nombre`,L.`Descripcion` as Localidad FROM `alumnoaula` as AA, `Alumno` as A, `Localidad` as L, `Aula` as AL
+
+SELECT AL.`Materia`,A.`Nombre`,L.`Descripcion` as Localidad
+ FROM `alumnoaula` as AA, `Alumno` as A, `Localidad` as L, `Aula` as AL
+  WHERE AL.ID=AA.IDaula and A.ID=aa.IDalumno and A.IDlocalidad=L.ID
